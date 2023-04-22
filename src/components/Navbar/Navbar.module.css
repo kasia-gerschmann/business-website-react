@@ -1,0 +1,12 @@
+.mainNavList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+@media (max-width: 34em) {
+  .mainNavList {
+    display: none;
+  }
+}

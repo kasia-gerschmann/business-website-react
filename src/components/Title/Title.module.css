@@ -1,0 +1,26 @@
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.navy {
+  color: #152d41;
+}
+
+.white {
+  color: white;
+}
+
+@media (max-width: 34em) {
+  .title {
+    display: block;
+    text-align: center;
+  }
+  .responsive {
+    font-size: 26px;
+    margin-bottom: 38px;
+  }
+}

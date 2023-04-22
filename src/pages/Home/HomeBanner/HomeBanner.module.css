@@ -1,0 +1,16 @@
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shadow {
+  background-color: rgba(239, 88, 101, 0.47) !important;
+  outline-offset: -100px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  background-blend-mode: multiply;
+}

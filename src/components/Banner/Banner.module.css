@@ -1,0 +1,30 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  /* width: 577px;*/
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 577px;
+}
+
+.h3 {
+  /*width: 276px;*/
+  height: 23.13px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  color: #ffffff;
+}

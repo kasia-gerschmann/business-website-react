@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 62px;
+  row-gap: 62px;
+  width: fit-content;
+  align-self: center;
+}
+
+@media (max-width: 55em) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}

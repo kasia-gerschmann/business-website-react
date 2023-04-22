@@ -1,0 +1,25 @@
+.btn {
+  border: 3px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  background: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 7px 54px;
+  color: white;
+  cursor: pointer;
+
+  transition: all 1s;
+}
+
+@media (min-width: 34em) {
+  .btn:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s;
+  }
+}
