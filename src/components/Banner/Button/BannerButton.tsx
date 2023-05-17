@@ -1,16 +1,16 @@
 import css from "./BannerButton.module.css";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
+import { useTranslation } from "react-i18next";
 
 interface Props {
-  children?: ReactNode;
   href?: string;
 }
 
-function BannerButton({ href, children }: Props) {
+function BannerButton({ href, children }: PropsWithChildren<Props>) {
   return (
     <div>
-      <a href={href}>
-        <button className={css.btn}>{children}</button>
+      <a href={href} className={css.btn}>
+       {children}
       </a>
     </div>
   );

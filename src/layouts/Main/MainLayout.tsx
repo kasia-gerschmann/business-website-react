@@ -1,18 +1,14 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import MainHeader from "./Header/MainHeader";
 import MainFooter from "./Footer/MainFooter";
 import css from "./MainLayout.module.css";
 
-interface Props {
-  children?: ReactNode;
-}
-
-function MainLayout({ children }: Props) {
+function MainLayout({ children }: PropsWithChildren) {
   return (
     <>
-      <MainHeader></MainHeader>
-      <div className={css.content}>{children}</div>
-      <MainFooter></MainFooter>
+      <MainHeader />
+      <main className={css.content}>{children}</main>
+      <MainFooter />
     </>
   );
 }

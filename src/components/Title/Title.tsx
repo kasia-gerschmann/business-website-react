@@ -1,14 +1,13 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import css from "./Title.module.css";
 import classnames from "classnames";
 
 interface Props {
-  children?: ReactNode;
   variant?: "white" | "navy";
   responsive?: boolean;
 }
 
-function Title({ variant = "navy", responsive = true, children }: Props) {
+function Title({ variant = "navy", responsive = true, children }: PropsWithChildren<Props>) {
   const titleClass = classnames({
     [css.title]: true,
     [css.white]: variant === "white",

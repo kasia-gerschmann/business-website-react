@@ -1,11 +1,10 @@
 import classnames from "classnames";
-import { CSSProperties, ReactNode } from "react";
+import { CSSProperties, PropsWithChildren } from "react";
 import css from "./Container.module.css";
 
 interface Props {
   variant?: "white" | "blue";
   backgroundImage?: string;
-  children?: ReactNode;
   id?: string;
   fullHeight?: boolean;
 }
@@ -16,7 +15,7 @@ function Container({
   id,
   fullHeight,
   children,
-}: Props) {
+}: PropsWithChildren<Props>) {
   const containerClass = classnames({
     [css.container]: true,
     [css.white]: variant === "white",

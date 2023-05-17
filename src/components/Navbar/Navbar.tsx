@@ -1,17 +1,12 @@
 import css from "./Navbar.module.css";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-interface Props {
-  children?: ReactNode;
-}
 
-function Navbar({ children }: Props) {
+function Navbar({ children }: PropsWithChildren) {
   return (
-    <>
       <nav>
         <ul className={css.mainNavList}>{children}</ul>
       </nav>
-    </>
   );
 }
 

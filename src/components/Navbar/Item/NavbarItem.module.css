@@ -9,13 +9,16 @@
   transition: all 0.5s;
 }
 
-.link:hover,
-.link:active {
-  transform: scale(1.1);
+@media (min-width: 34em) {
 
-  transition: all 0.5s;
-}
+  .link:hover,
+  .link:active {
+    transform: scale(1.1);
 
-.disabled {
-  cursor: not-allowed;
+    transition: all 0.5s;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
 }

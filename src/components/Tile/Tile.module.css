@@ -19,6 +19,11 @@
   transition: all 0.5s;
 }
 
+.tile:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
 .dot::before {
   content: "";
   border-radius: 50%;
@@ -28,11 +33,6 @@
   position: absolute;
   top: -11px;
   left: -11px;
-}
-
-.tile:hover {
-  transform: scale(1.05);
-  transition: all 0.5s;
 }
 
 .new {

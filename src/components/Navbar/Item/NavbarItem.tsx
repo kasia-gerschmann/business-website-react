@@ -1,21 +1,20 @@
 import css from "./NavbarItem.module.css";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import classnames from "classnames";
 
 interface Props {
-  children?: ReactNode;
   href?: string;
   disabled?: boolean;
 }
 
-function NavbarItem({ href, disabled = false, children }: Props) {
-  const aClass = classnames({
+function NavbarItem({ href, disabled = false, children }: PropsWithChildren<Props>) {
+  const aStyles = classnames({
     [css.link]: true,
     [css.disabled]: disabled,
   });
   return (
     <li>
-      <a className={aClass} href={href}>
+      <a className={aStyles} href={href}>
         {children}
       </a>
     </li>

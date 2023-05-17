@@ -1,11 +1,8 @@
 import css from "./Footer.module.css";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-interface Props {
-  children?: ReactNode;
-}
 
-function Footer({ children }: Props) {
+function Footer({ children }: PropsWithChildren) {
   return <footer className={css.footer}>{children}</footer>;
 }
 

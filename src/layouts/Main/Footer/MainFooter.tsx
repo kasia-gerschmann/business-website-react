@@ -6,9 +6,10 @@ import {
   faSquareFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import css from "./MainFooter.module.css";
+import { useTranslation } from "react-i18next";
 
 function MainFooter() {
-  const title = "Nazwa firmy - wszelkie prawa zastrzeżone, 2019";
+  const { t } = useTranslation();
   const iconStyle: CSSProperties = {
     color: "#eef0f6",
     height: 31,
@@ -18,7 +19,7 @@ function MainFooter() {
 
   return (
     <Footer>
-      <p className={css.title}>{title}</p>
+      <p className={css.title}>{t("footer.title")}</p>
       <div className={css.iconsContainer}>
         <FontAwesomeIcon icon={faSquareFacebook} style={iconStyle} />
         <FontAwesomeIcon icon={faInstagram} style={iconStyle} />

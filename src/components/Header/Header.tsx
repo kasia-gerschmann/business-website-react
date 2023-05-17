@@ -1,11 +1,7 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 import css from "./Header.module.css";
 
-interface Props {
-  children?: ReactNode;
-}
-
-function Header({ children }: Props) {
+function Header({ children }: PropsWithChildren) {
   return <header className={css.header}>{children}</header>;
 }
 

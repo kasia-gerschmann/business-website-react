@@ -12,6 +12,7 @@
   padding: 7px 54px;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 
   transition: all 1s;
 }
